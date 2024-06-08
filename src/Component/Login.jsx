@@ -16,7 +16,7 @@ function Login() {
 
     const handleButtonClick = ()=>{
 
-       const message= checkValidationData(name.current.value,email.current.value,password.current.value);
+       const message= checkValidationData(email.current.value,password.current.value);
         setErrMessage(message);
     }
 

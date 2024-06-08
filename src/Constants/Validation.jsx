@@ -1,6 +1,6 @@
 import React from 'react'
 
-function checkValidationData(name,email,password) {
+function checkValidationData(email,password) {
     // const isName = 
     const isEmailValidate = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
     const isPasswordValidate =/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
