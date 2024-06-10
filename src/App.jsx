@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Body from './Component/Body'
 import Header from './Component/Header'
+import { Provider } from 'react-redux'
+import appStore from './Utility/appStore'
 
 
 function App() {
@@ -11,7 +13,9 @@ function App() {
 
   return (
     <>
-      <Body/>
+      <Provider store={appStore}>
+        <Body />
+        </Provider>
     </>
   )
 }
